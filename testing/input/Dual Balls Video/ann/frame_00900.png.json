@@ -1,0 +1,67 @@
+{
+    "description": "",
+    "tags": [
+        {
+            "id": 27186213,
+            "name": "Labeled/Fixed",
+            "value": null,
+            "labelerLogin": null,
+            "createdAt": "2020-02-17T18:00:16.884Z",
+            "updatedAt": "2020-02-17T18:00:16.884Z"
+        }
+    ],
+    "size": {
+        "height": 426,
+        "width": 640
+    },
+    "objects": [
+        {
+            "id": 352850558,
+            "classId": 1309430,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "CAP1Sup",
+            "createdAt": "2020-02-17T18:00:16.884Z",
+            "updatedAt": "2020-02-17T18:00:16.884Z",
+            "tags": [],
+            "classTitle": "Power_Cell",
+            "points": {
+                "exterior": [
+                    [
+                        283,
+                        226
+                    ],
+                    [
+                        388,
+                        334
+                    ]
+                ],
+                "interior": []
+            }
+        },
+        {
+            "id": 352850557,
+            "classId": 1309430,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "CAP1Sup",
+            "createdAt": "2020-02-17T18:00:16.884Z",
+            "updatedAt": "2020-02-17T18:00:16.884Z",
+            "tags": [],
+            "classTitle": "Power_Cell",
+            "points": {
+                "exterior": [
+                    [
+                        333,
+                        185
+                    ],
+                    [
+                        424,
+                        276
+                    ]
+                ],
+                "interior": []
+            }
+        }
+    ]
+}

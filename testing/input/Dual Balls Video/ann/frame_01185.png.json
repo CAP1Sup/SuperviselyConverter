@@ -1,0 +1,43 @@
+{
+    "description": "",
+    "tags": [
+        {
+            "id": 27186213,
+            "name": "Labeled/Fixed",
+            "value": null,
+            "labelerLogin": null,
+            "createdAt": "2020-02-17T18:00:16.884Z",
+            "updatedAt": "2020-02-17T18:00:16.884Z"
+        }
+    ],
+    "size": {
+        "height": 426,
+        "width": 640
+    },
+    "objects": [
+        {
+            "id": 352850522,
+            "classId": 1309430,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "CAP1Sup",
+            "createdAt": "2020-02-17T18:00:16.884Z",
+            "updatedAt": "2020-02-17T18:00:16.884Z",
+            "tags": [],
+            "classTitle": "Power_Cell",
+            "points": {
+                "exterior": [
+                    [
+                        0,
+                        328
+                    ],
+                    [
+                        99,
+                        426
+                    ]
+                ],
+                "interior": []
+            }
+        }
+    ]
+}
