@@ -108,20 +108,23 @@ def convert_Supervisely_2_Pascal_VOC(input_supervisely_folder, output_folder, cl
 
 
 def convert_original_image(filename, input_supervisely_folder, output_folder_path):
-    # Get the file's name for splitting
-    raw_filename, file_ext = os.path.splitext(filename)
-
-    # Create an image for copying
-    image = Image.open(os.path.join(input_supervisely_folder, 'img', filename))
-
-    # Save the output image to the specified directory
-    image.save(os.path.join(output_folder_path, "JPEGImages", (raw_filename + ".jpg")))
-
+    
     # Get annotation data from the respective annotation file
     image_objects = get_image_objects(filename, input_supervisely_folder)
 
-    # Build an xml with the old file
-    build_xml_annotation(image_objects, (raw_filename + ".jpg"), output_folder_path)
+    # Check if the image has valid data. If not, it can't be used
+    if image_objects:
+        # Get the file's name for splitting
+        raw_filename, file_ext = os.path.splitext(filename)
+        
+        # Create an image for copying
+        image = Image.open(os.path.join(input_supervisely_folder, 'img', filename))
+        
+        # Save the output image to the specified directory
+        image.save(os.path.join(output_folder_path, "JPEGImages", (raw_filename + ".jpg")))
+
+        # Build an xml with the old file
+        build_xml_annotation(image_objects, (raw_filename + ".jpg"), output_folder_path)
 
 
 def get_image_objects(image_name, input_supervisely_folder):
